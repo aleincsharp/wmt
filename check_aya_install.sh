@@ -25,7 +25,7 @@ success_message() {
 echo -e "[34mStarting AYA Installation Checks...[0m"
 
 # Check if AYA node1 is reachable
-if ! curl -s "http://peer1-501.worldmobilelabs.com:36657/status" &> /dev/null; then
+if ! curl -s "http://peer1-501.worldmobilelabs.com:26657/status" &> /dev/null; then
     error_message "Cannot reach AYA node1. Check your network connection."
 else
     success_message "AYA node1 is reachable."
